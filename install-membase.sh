@@ -9,4 +9,4 @@ else
 	wget http://builds.hq.northscale.net/latestbuilds/membase-server-community_x86.rpm
 fi 
 
-rpm -i membase-server
+rpm -i membase-server*
