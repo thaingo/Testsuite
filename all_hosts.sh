@@ -26,7 +26,8 @@ then
     elif [ "$1" == "uninstall" ]
     then
 	echo "Uninstalling Membase Cluster"
-	pssh -h hosts -l root -P /root/Testsuite/basic/uninstall-membase.sh
+	pssh -h hosts -l root -P /root/Testsuite/basic/uninstall-membase.sh > /root/Testsuite/res
+	echo "Done"
     else
 	echo "Unknown Arg $1"
     fi
